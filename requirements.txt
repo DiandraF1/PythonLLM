@@ -1,0 +1,19 @@
+openai
+chromadb
+sentence-transformers
+tiktoken
+streamlit
+python-dotenv
+ 
+ # Pentru generare audio sau voce
+pyttsx3          # text to speech local
+SpeechRecognition
+pyaudio
+
+# Pentru imagine
+diffusers
+transformers
+torch
+
+# Pentru PDF/text extras din fișiere
+PyMuPDF
