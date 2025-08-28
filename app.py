@@ -28,7 +28,7 @@ def generate_cover_image(prompt: str) -> str:
 
 #  Setări aplicație
 st.set_page_config(page_title="Smart Librarian", page_icon="📚")
-st.title("📚 Smart Librarian – RAG Chatbot")
+st.title(" Smart Librarian – RAG Chatbot")
 
 #  Inițializare sesiune
 if "last_response" not in st.session_state:
