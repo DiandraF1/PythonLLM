@@ -11,7 +11,7 @@ load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-#  Funcție de generare imagine (copertă carte)
+
 def generate_cover_image(prompt: str) -> str:
     try:
         response = client.images.generate(
@@ -23,7 +23,7 @@ def generate_cover_image(prompt: str) -> str:
         )
         return response.data[0].url
     except Exception as e:
-        print("❌ Eroare la generarea imaginii:", e)
+        print(" Eroare la generarea imaginii:", e)
         return None
 
 #  Setări aplicație
@@ -89,5 +89,5 @@ if "last_image_url" in st.session_state and st.session_state.last_image_url:
     st.image(
         st.session_state.last_image_url,
         caption="Imagine generată pentru cartea recomandată",
-        use_container_width=True  # înlocuiește use_column_width
+        use_container_width=True  
     )
